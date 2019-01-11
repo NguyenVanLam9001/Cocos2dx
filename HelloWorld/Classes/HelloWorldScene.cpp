@@ -24,6 +24,7 @@
 
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
+#include"logoscene .h"
 
 USING_NS_CC;
 
@@ -115,6 +116,12 @@ bool HelloWorld::init()
         // add the sprite as a child to this layer
         this->addChild(sprite, 0);
     }
+	auto gotoNext = CallFunc::create([]() {
+		Director::getInstance()->replaceScene(LogoScene::createScene());
+	});
+	auto sequence = Sequence::create(DelayTime::create(3), gotoNext,
+		nullptr);
+	runAction(sequence);
     return true;
 }
 
