@@ -24,6 +24,12 @@
     <ClCompile Include="LogoScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\menuScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Log1.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -36,6 +42,12 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="LogoScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\menuScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Log1.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

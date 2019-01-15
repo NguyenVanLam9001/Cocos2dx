@@ -1,5 +1,6 @@
 #include "LogoScene.h"
 #include"HelloWorldScene.h"
+#include"menuScene.h"
 USING_NS_CC;
 Scene* LogoScene::createScene()
 {
@@ -116,5 +117,11 @@ bool LogoScene::init()
 	logo->runAction(sequence);
 
 	//impr->runAction(spawn->clone());
+	auto gotoNext = CallFunc::create([]() {
+		Director::getInstance()->replaceScene(menuScene::createScene());
+	});
+	auto sequence1 = Sequence::create(DelayTime::create(3), gotoNext,
+		nullptr);
+	runAction(sequence1);
 	return true;
 }

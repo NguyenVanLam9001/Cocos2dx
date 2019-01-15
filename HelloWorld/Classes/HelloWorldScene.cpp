@@ -24,7 +24,7 @@
 
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
-#include"logoscene .h"
+#include"LogoScene.h"
 
 USING_NS_CC;
 
